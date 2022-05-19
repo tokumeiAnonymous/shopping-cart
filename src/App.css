@@ -1,4 +1,5 @@
 :root {
+    --icon-size: 2rem;
     font-family: 'Barlow', sans-serif;
 }
 
@@ -21,6 +22,7 @@ header {
     width: 2rem;
     border-radius: 1rem 1rem 0 0;
     border: solid 1px #F8A98F;
+    margin-left: 1rem;
 }
 
 .header--title {
@@ -34,9 +36,44 @@ header ul {
 
 ul li {
     list-style: none;
-    width: 2rem;
-    height: 2rem;
+    width: fit-content;
+    height: fit-content;
     margin: 0.3rem;
     overflow: hidden;
     /* border: solid 1px black; */
 }
+
+.header--nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.header--nav img {
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+@media only screen and (min-width: 401px) {
+    #header--home::after {
+        content: "Home"
+    }
+    #header--shop::after {
+        content: "Shop"
+    }
+    #header--cart::after {
+        content: "Cart"
+    }
+    #header--account::after {
+        content: "Account"
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    :root {
+        --icon-size: 1.5rem;
+    }
+}
+
