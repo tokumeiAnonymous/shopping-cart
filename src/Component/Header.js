@@ -1,31 +1,43 @@
-import homeSrc from '../Assets/house-solid.svg'
-import shopSrc from '../Assets/bag-shopping-solid.svg'
-import accountSrc from '../Assets/user-solid.svg'
-import cartSrc from '../Assets/cart-shopping-solid.svg'
+import { ReactComponent as HomeIcon } from '../Assets/house-solid.svg'
+import { ReactComponent as ShopIcon } from '../Assets/bag-shopping-solid.svg'
+import { ReactComponent as AccountIcon } from '../Assets/user-solid.svg'
+import { ReactComponent as CartIcon } from '../Assets/cart-shopping-solid.svg'
 import logoSrc from '../Assets/Shopp-e.png';
+import { NavLink} from 'react-router-dom';
 
 export default function Header() {
+
     return (
         <header className="header">
             {/* Routing for the links neglect warning for now*/}
-            <a href="#" className="header--logo">
-                <img src={logoSrc}/>
-            </a>
+            <NavLink to="/" className="header--logo">
+                <img src={logoSrc} alt="Shopp-E logo"/>
+            </NavLink>
             <div className="header--title">SHOPP-E</div>
-            <ul className="header--nav">
+            <nav>
+            <ul>
                 <li>
-                    <a id="header--home" href="#"><img src={homeSrc} alt="Home" /></a>
+                    <NavLink id="header--home" to="/">
+                        <HomeIcon width="2rem" height="2rem"/>
+                    </NavLink>
                 </li>
                 <li>
-                    <a id="header--shop" href="#"><img src={shopSrc} alt="Shop" /></a>
+                    <NavLink id="header--shop" to="/shop">
+                        <ShopIcon width="2rem" height="2rem" />
+                    </NavLink>
                 </li>
                 <li>
-                    <a id="header--cart" href="#"><img src={cartSrc} alt="Cart" /></a>
+                    <NavLink id="header--cart" to="/cart">
+                        <CartIcon width="2rem" height="2rem" />
+                    </NavLink>
                 </li>
                 <li>
-                    <a id="header--account" href="#"><img src={accountSrc} alt="Account" /></a>
+                    <NavLink id="header--account" to="/account">
+                        <AccountIcon width="2rem" height="2rem" />
+                    </NavLink>
                 </li>
             </ul>
+            </nav>
         </header>
     )
 }

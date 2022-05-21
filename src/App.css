@@ -13,7 +13,7 @@ header {
     align-items: center;
     height: 3rem;
     background: linear-gradient(hsla(11, 91%, 57%, 1), hsla(11, 91%, 57%, 0.8));
-    border-bottom: solid 2px #F8A98F;
+    border-bottom: solid 2px hsla(11, 91%, 57%, 1);
     color: white;
 }
 
@@ -21,7 +21,7 @@ header {
     height: 2rem;
     width: 2rem;
     border-radius: 1rem 1rem 0 0;
-    border: solid 1px #F8A98F;
+    border: solid 1px hsla(11, 91%, 57%, 1);
     margin-left: 1rem;
 }
 
@@ -30,11 +30,11 @@ header {
     margin-right: auto;
 }
 
-header ul {
+nav ul {
     display: flex;
 }
 
-ul li {
+nav ul li {
     list-style: none;
     width: fit-content;
     height: fit-content;
@@ -43,7 +43,7 @@ ul li {
     /* border: solid 1px black; */
 }
 
-.header--nav a {
+nav ul a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,9 +51,14 @@ ul li {
     color: white;
 }
 
-.header--nav img {
-    width: var(--icon-size);
-    height: var(--icon-size);
+nav .active {
+    background-color: white;
+    color:hsla(11, 91%, 57%, 1);
+    border-radius: 5px;
+}
+
+nav .active svg {
+    fill: hsla(11, 91%, 57%, 1);
 }
 
 .footer {
@@ -89,9 +94,9 @@ ul li {
     }
 }
 
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+/* @media only screen and (min-width: 401px) and (max-width: 960px) {
     :root {
         --icon-size: 1.5rem;
     }
-}
+} */
 

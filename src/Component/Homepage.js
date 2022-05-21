@@ -1,7 +1,7 @@
 export default function Homepage() {
     return (
-        <div>
-            
-        </div>
+        <main className='home'>
+            Hello this is the Homepage
+        </main>
     )
 }
