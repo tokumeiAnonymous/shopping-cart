@@ -24,24 +24,24 @@ describe('Testing app navigation', () => {
         const home = document.querySelector('#header--home');
         fireEvent.click(home);
         const main = document.querySelector('main');
-        expect(main.textContent).toBe('Hello this is the Homepage');
+        expect(main.className).toBe('home');
     })
     test('should render shop when "Shop" is clicked',() => {
         const shop = document.querySelector('#header--shop');
         fireEvent.click(shop);
         const main = document.querySelector('main');
-        expect(main.textContent).toBe('Hello this is the shop');
+        expect(main.className).toBe('shop');
     })
     test('should render cart when "Cart" is clicked',() => {
         const cart = document.querySelector('#header--cart');
         fireEvent.click(cart);
         const main = document.querySelector('main');
-        expect(main.textContent).toBe('Hello this is the Cart');
+        expect(main.className).toBe('cart');;
     })
     test('should render account when "Account" is clicked',() => {
         const account = document.querySelector('#header--account');
         fireEvent.click(account);
         const main = document.querySelector('main');
-        expect(main.textContent).toBe('Hello this is account');
+        expect(main.className).toBe('account');
     })
 })

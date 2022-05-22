@@ -1,5 +1,5 @@
-import linkedinSrc from '../Assets/linkedin-brands.svg';
-import githubSrc from '../Assets/github-brands.svg';
+import linkedinSrc from '../Assets/Icons/linkedin-brands.svg';
+import githubSrc from '../Assets/Icons/github-brands.svg';
 
 export default function Footer() {
     return (

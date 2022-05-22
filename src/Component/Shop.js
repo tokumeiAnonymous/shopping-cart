@@ -1,6 +1,6 @@
 export default function Shop() {
     return (
-        <main>
+        <main className='shop'>
             Hello this is the shop
         </main>
     )

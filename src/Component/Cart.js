@@ -1,6 +1,6 @@
 export default function Cart() {
     return (
-        <main>
+        <main className='cart'>
             Hello this is the Cart
         </main>
     )

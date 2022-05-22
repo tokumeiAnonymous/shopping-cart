@@ -17,17 +17,23 @@ header {
     color: white;
 }
 
-.header--logo img {
-    height: 2rem;
-    width: 2rem;
-    border-radius: 1rem 1rem 0 0;
-    border: solid 1px hsla(11, 91%, 57%, 1);
+.header--logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    text-decoration: none;
+    color: hsla(11, 91%, 57%, 1);
+    background-color: white;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
     margin-left: 1rem;
 }
 
-.header--title {
-    margin: 0.3rem;
-    margin-right: auto;
+.header--logo img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    border: solid 1px hsla(11, 91%, 57%, 1);
 }
 
 nav ul {
@@ -63,7 +69,6 @@ nav .active svg {
 }
 
 .footer {
-    position: absolute;
     width: 100vw;
     bottom: 0;
     display: flex;
@@ -78,6 +83,49 @@ nav .active svg {
     width: var(--icon-size);
     height: var(--icon-size);
     margin: 0.5rem;
+}
+
+/* Should have used styled component but
+    I wanted to focus on one thing for this project
+    which is testing
+*/
+
+/* Home styles */
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home > * {
+    width: 80vw;
+    overflow: hidden;
+}
+
+.home--shop--link {
+    position: absolute;
+    width: 30%;
+    transform: translate(80%, -100%);
+    border-radius: 5px;
+    background-color: hsla(202, 67%, 61%, 0.8);
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.home--shop--link:hover {
+    background-color: hsla(202, 67%, 61%, 1);
+}
+
+#home--flash {
+    width: 80vw;
+}
+
+#home--summer, #home--voucher {
+    width: 40vw;
 }
 
 @media only screen and (min-width: 401px) {
