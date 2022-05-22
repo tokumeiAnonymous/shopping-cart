@@ -1,7 +1,7 @@
 export default function Account() {
     return (
-        <div>
+        <main>
             Hello this is account
-        </div>
+        </main>
     )
 }

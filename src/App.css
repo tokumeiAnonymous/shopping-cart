@@ -39,7 +39,6 @@ nav ul li {
     width: fit-content;
     height: fit-content;
     margin: 0.3rem;
-    overflow: hidden;
     /* border: solid 1px black; */
 }
 
@@ -54,7 +53,9 @@ nav ul a {
 nav .active {
     background-color: white;
     color:hsla(11, 91%, 57%, 1);
+    border: 1px solid hsla(11, 91%, 57%, 1);
     border-radius: 5px;
+    box-shadow: -3px -3px 3px white;
 }
 
 nav .active svg {
