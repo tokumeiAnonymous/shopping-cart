@@ -8,10 +8,12 @@
 
 body {
     margin: 0;
+    background-color: hsla(0, 12%, 85%, 0.1);
 }
 
 .App {
     display: flex;
+    height: 100vh;
     flex-direction: column;
 }
 
@@ -54,7 +56,6 @@ nav ul li {
     width: fit-content;
     height: fit-content;
     margin: 0.3rem;
-    /* border: solid 1px black; */
 }
 
 nav ul a {
@@ -83,8 +84,7 @@ nav .active svg {
     justify-content: center;
     align-items: center;
     color: hsla(0, 0%, 0%, 0.6);
-    justify-self: flex-end;
-    align-self: flex-end;
+    background-color: hsla(0, 4%, 75%, 0.1);
     border-top: solid 1px hsla(0, 0%, 0%, 0.1);
 }
 
@@ -102,19 +102,19 @@ nav .active svg {
 /* Home styles */
 
 main {
+    display: flex;
     margin-bottom: 2rem;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
 }
 
 .home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
 .home img {
     border-radius: 1rem;
-    border: 1px solid white;
 }
 
 .home > * {
@@ -141,7 +141,7 @@ main {
     border-radius: 0.3rem;
     border: 1px solid white;
     background-color: hsla(39, 100%, 50%, 0.6);
-    right: 4rem;
+    right: 3rem;
     bottom: 0.5rem;
 }
 
@@ -165,7 +165,7 @@ main {
     width: var(--small-image);
 }
 
-@media only screen and (min-width: 401px) {
+@media only screen and (min-width: 461px) {
     :root {
         --image-container: 460px;
         --big-image: 400px;
