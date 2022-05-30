@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import './ProductFullView.css';
 import Rating from './Rating';
 import { useState } from 'react';
+import Comment from './Comment';
 
 export default function ProductFullView({ addTocart }) {
     const [itemCount, setItemCount] = useState(0);
@@ -27,7 +28,11 @@ export default function ProductFullView({ addTocart }) {
     // fake fetch for now
     const { name, imageSrc,
         price, rating,
-        seller } = ProductList[id - 1];
+        seller, comments } = ProductList[id - 1];
+
+    const commentList = comments.map( ({userName, comment}) => (
+        <Comment user={userName} comment={comment} />
+    ))
     
 
     return (
@@ -46,7 +51,7 @@ export default function ProductFullView({ addTocart }) {
                 </div>
             </div>
             <div className='comments'>
-                Comments: <br />
+                Comments: {commentList}
             </div>
         </main>
     )

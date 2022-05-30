@@ -2,9 +2,6 @@ import ProductList from '../Model/ProductList';
 import CartProduct from './CartProduct';
 import './Cart.css';
 
-// create + and - button
-// if not enough balance show a pop up
-
 export default function Cart({ cart, updateCart, balance, updateBalance, clearCart }) {
 
     let totalAmount = 0;
@@ -19,9 +16,22 @@ export default function Cart({ cart, updateCart, balance, updateBalance, clearCa
     })
 
     function checkout(amount) {
-        if (amount > balance) return;
+        if (amount > balance) {
+            showAlert();
+            return;
+        }
         updateBalance(amount);
         clearCart();
+    }
+
+    function showAlert() {
+        const alert = document.querySelector('.warning-balance');
+        alert.showModal();
+    }
+
+    function closeModal(){
+        const alert = document.querySelector('.warning-balance');
+        alert.close();
     }
 
     return (
@@ -30,6 +40,10 @@ export default function Cart({ cart, updateCart, balance, updateBalance, clearCa
             <div> Total: $ {totalAmount}</div>
             <div>Current Balance: $ {balance}</div>
             <button onClick={() => checkout(totalAmount)}>Check out</button>
+            <dialog className='warning-balance'>
+                <div className="message">Not enough balance!</div>
+                <button onClick={closeModal}>Close</button>
+            </dialog>
         </main>
     )
 }
