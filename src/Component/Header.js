@@ -5,7 +5,9 @@ import { ReactComponent as CartIcon } from '../Assets/Icons/cart-shopping-solid.
 import logoSrc from '../Assets/Icons/Logo.svg';
 import { NavLink } from 'react-router-dom';
 
-export default function Header() {
+export default function Header({ cart }) {
+
+    const count = cart.length;
 
     return (
         <header className="header">
@@ -28,6 +30,7 @@ export default function Header() {
                 </li>
                 <li>
                     <NavLink id="header--cart" to="/cart">
+                    {count > 0 && <div className='cart--counter'>{count}</div>}
                         <CartIcon width="2rem" height="2rem" />
                     </NavLink>
                 </li>

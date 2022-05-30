@@ -1,6 +1,6 @@
 import ProductList from '../Model/ProductList';
 import { useParams } from 'react-router-dom';
-// import './ProductFullView.css';
+import './ProductFullView.css';
 import Rating from './Rating';
 import { useState } from 'react';
 
@@ -14,6 +14,12 @@ export default function ProductFullView({ addTocart }) {
     function decrement() {
         if (itemCount === 0) return;
         setItemCount(prev => prev - 1);
+    }
+    function updateItemCount(e) {
+        const newCount = parseInt(e.target.value);
+        if (isNaN(newCount)) return;
+        if (newCount > 100 || newCount < 0) return;
+        setItemCount(newCount);
     }
     
     const { id } = useParams();
@@ -34,7 +40,7 @@ export default function ProductFullView({ addTocart }) {
                     {rating >= 0 && <Rating rating={rating}/>}
                     <div>{seller}</div>
                     <button onClick={decrement}> - </button>
-                    {itemCount}
+                    <input type="number" value={itemCount} onChange={updateItemCount}/>
                     <button onClick={increment}> + </button>
                     <button onClick={() => addTocart(itemCount, id)}>Add to cart</button>
                 </div>
