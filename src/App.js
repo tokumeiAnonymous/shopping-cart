@@ -34,17 +34,18 @@ function App() {
     setCart(newCart);
   }
 
-  function updateCountFromCart(itemID, isReduce) {
+  function updateCountFromCart(event, itemID, isReduce) {
+    event.preventDefault();
+    event.stopPropagation();
     const tempCart = [...cart];
-    // use filter
-    const newCart = tempCart.map( item => {
-      if (item.itemID === itemID) {
+    const newCart = tempCart.filter( item => {
+      if (parseInt(item.itemID) === itemID) {
         isReduce ? item.itemCount-- : item.itemCount++;
-        // eslint-disable-next-line
-        if (item.itemCount === 0) return;
+        if (item.itemCount === 0) return false;
       }
-      return item;
+      return true;
     })
+    console.log(newCart);
     setCart(newCart);
   }
 
@@ -67,8 +68,7 @@ function App() {
             updateBalance={updateBalance}
             clearCart={clearCart}/>} />
             <Route path='/account' 
-            element={<Account balance={balance}
-            />} />
+            element={<Account balance={balance}/>} />
             <Route path='/shop/:id' element={<ProductFullView addTocart={addToCart}/>} />
           </Routes>
           <Footer />

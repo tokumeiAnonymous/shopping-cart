@@ -2,9 +2,8 @@ import ProductList from '../Model/ProductList';
 import CartProduct from './CartProduct';
 import './Cart.css';
 
-// add checkout button
 // create + and - button
-// clear out cart after checkout
+// if not enough balance show a pop up
 
 export default function Cart({ cart, updateCart, balance, updateBalance, clearCart }) {
 
@@ -12,10 +11,15 @@ export default function Cart({ cart, updateCart, balance, updateBalance, clearCa
     const cartList = cart.map( element => {
         const product = ProductList[element.itemID - 1];
         totalAmount = totalAmount + (parseInt(element.itemCount) * product.price);
-        return <CartProduct key={product.id} product={product} count={element.itemCount}/>
+        return <CartProduct 
+                key={product.id} 
+                product={product} 
+                count={element.itemCount}
+                updateCart={updateCart}/>
     })
 
     function checkout(amount) {
+        if (amount > balance) return;
         updateBalance(amount);
         clearCart();
     }
