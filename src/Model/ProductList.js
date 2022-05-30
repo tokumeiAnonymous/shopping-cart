@@ -16,7 +16,7 @@ const ProductList = [
         price: 50,
         rating: 4,
         seller: 'Seller',
-        comments: ['The item has scratches'],
+        comments: [],
         imageSrc: 'https://via.placeholder.com/270'
     },
     {
@@ -34,7 +34,7 @@ const ProductList = [
         price: 300,
         rating: 4,
         seller: 'Chess master',
-        comments: ['Nice chess board'],
+        comments: [],
         imageSrc: 'https://via.placeholder.com/270'
     },
     {
@@ -43,8 +43,7 @@ const ProductList = [
         price: 20,
         rating: 5,
         seller: 'Runner',
-        comments: ['Very efficient', 
-                    'Recommended'],
+        comments: [],
         imageSrc: 'https://via.placeholder.com/270'
     },
     {
@@ -53,7 +52,7 @@ const ProductList = [
         price: 20,
         rating: 4,
         seller: 'Farmer',
-        comments: ['Very good quality'],
+        comments: [],
         imageSrc: 'https://via.placeholder.com/270'
     },
     {
@@ -62,7 +61,7 @@ const ProductList = [
         price: 20,
         rating: -1,
         seller: 'Farmer',
-        comments: ['Very good quality'],
+        comments: [],
         imageSrc: 'https://via.placeholder.com/270'
     },
     {
@@ -71,7 +70,7 @@ const ProductList = [
         price: 4,
         rating: 4,
         seller: 'Seaman',
-        comments: ['Very good quality'],
+        comments: [],
         imageSrc: 'https://via.placeholder.com/270'
     }
 ]

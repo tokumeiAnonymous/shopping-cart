@@ -1,4 +1,10 @@
+.product-full {
+  flex-direction: column;
+}
 
+.comments {
+  margin-top: 1rem;
+}
 
 /* Removes the top and bottom button */
 /* Chrome, Safari, Edge, Opera */
@@ -11,4 +17,5 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+  width: 3rem;
 }

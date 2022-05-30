@@ -1,0 +1,23 @@
+.comments {
+    justify-content: flex-start;
+    align-self: flex-start;
+    margin-left: 10vw;
+}
+
+.comment {
+    margin-top: 1rem;
+}
+
+.comment--profile {
+    display: flex;
+}
+
+.comment--profile img {
+    width: 32px;
+    border-radius: 16px;
+    margin-left: 2rem;
+}
+
+.comments--text {
+    margin-left: 4rem;
+}
