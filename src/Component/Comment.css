@@ -1,7 +1,7 @@
 .comments {
     justify-content: flex-start;
     align-self: flex-start;
-    margin-left: 10vw;
+    width: 100%;
 }
 
 .comment {
@@ -16,6 +16,16 @@
     width: 32px;
     border-radius: 16px;
     margin-left: 2rem;
+}
+
+.comment .rating img{
+    height: 16px;
+    margin-left: 0;
+}
+
+.comment .rating {
+    width: 100px;
+    display: flex;
 }
 
 .comments--text {

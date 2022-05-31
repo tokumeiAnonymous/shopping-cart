@@ -13,6 +13,11 @@
     border: 1px solid rgba(219, 216, 216, 1);
 }
 
+.product>img {
+    width: 270px;
+    border: 1px solid rgb(167, 162, 162);
+}
+
 .product:hover {
     scale: 1.01;
     border: 1px solid hsla(11, 91%, 57%, 1);

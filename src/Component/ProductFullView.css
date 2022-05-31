@@ -1,9 +1,21 @@
 .product-full {
   flex-direction: column;
+  width: 100%;
+}
+
+.product-full--details>img {
+  width: 540px;
+  border: 1px solid rgb(148, 145, 145);
+  border-radius: 1rem;
 }
 
 .comments {
   margin-top: 1rem;
+}
+
+.user {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 /* Removes the top and bottom button */

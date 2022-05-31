@@ -30,10 +30,9 @@ export default function ProductFullView({ addTocart }) {
         price, rating,
         seller, comments } = ProductList[id - 1];
 
-    const commentList = comments.map( ({userName, comment}) => (
-        <Comment user={userName} comment={comment} />
+    const commentList = comments.map( ({userName, comment}, index) => (
+        <Comment key={index}user={userName} comment={comment} />
     ))
-    
 
     return (
         <main className='product-full'>

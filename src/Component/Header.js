@@ -10,6 +10,7 @@ export default function Header({ cart }) {
     const count = cart.length;
 
     return (
+        <div className="header--wrapper">
         <header className="header">
             {/* Routing for the links neglect warning for now*/}
             <NavLink to="/" className="header--logo">
@@ -42,5 +43,6 @@ export default function Header({ cart }) {
             </ul>
             </nav>
         </header>
+        </div>
     )
 }

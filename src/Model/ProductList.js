@@ -5,10 +5,17 @@ const ProductList = [
         price: 50,
         rating: 4.8,
         seller: 'Trusted Seller',
-        comments: [{
-            userName: 'idontknow',
-            comment: 'Very good quality'}],
-        imageSrc: 'https://via.placeholder.com/270'
+        comments: [
+            {
+                userName: 'idontknow',
+                comment: 'Very good quality'
+            },
+            {
+                userName: 'definitelynotme',
+                comment: 'The best product in town!'
+            }
+        ],
+        imageSrc: '../ItemImages/SpringTree.png'
     },
     {
         id: 2,
@@ -17,7 +24,7 @@ const ProductList = [
         rating: 4,
         seller: 'Seller',
         comments: [],
-        imageSrc: 'https://via.placeholder.com/270'
+        imageSrc: '../ItemImages/AutumnTree.png'
     },
     {
         id: 3,
@@ -44,7 +51,7 @@ const ProductList = [
         rating: 5,
         seller: 'Runner',
         comments: [],
-        imageSrc: 'https://via.placeholder.com/270'
+        imageSrc: '../ItemImages/Hero.png'
     },
     {
         id: 6,
@@ -53,7 +60,7 @@ const ProductList = [
         rating: 4,
         seller: 'Farmer',
         comments: [],
-        imageSrc: 'https://via.placeholder.com/270'
+        imageSrc: '../ItemImages/SoilBlock.png'
     },
     {
         id: 7,
@@ -62,7 +69,7 @@ const ProductList = [
         rating: -1,
         seller: 'Farmer',
         comments: [],
-        imageSrc: 'https://via.placeholder.com/270'
+        imageSrc: '../ItemImages/RockBlock.png'
     },
     {
         id: 8,
@@ -71,7 +78,7 @@ const ProductList = [
         rating: 4,
         seller: 'Seaman',
         comments: [],
-        imageSrc: 'https://via.placeholder.com/270'
+        imageSrc: '../ItemImages/CrateBlock.png'
     }
 ]
 

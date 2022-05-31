@@ -21,15 +21,21 @@ body {
     flex-direction: column;
 }
 
+.header--wrapper {
+    background: linear-gradient(hsla(11, 91%, 57%, 1), hsla(11, 91%, 57%, 0.8));
+    margin-bottom: 2rem;
+}
+
 header { 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 3rem;
-    background: linear-gradient(hsla(11, 91%, 57%, 1), hsla(11, 91%, 57%, 0.8));
     border-bottom: solid 2px hsla(11, 91%, 57%, 1);
     color: white;
-    margin-bottom: 2rem;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header--logo {
@@ -121,6 +127,9 @@ main {
     flex-grow: 1;
     justify-content: center;
     align-items: center;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .home {
