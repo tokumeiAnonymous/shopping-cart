@@ -1,0 +1,11 @@
+.account--details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 272px;
+    height: 374px;
+    background-color: hsla(0, 4%, 75%, 0.1);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: solid 1px hsla(0, 0%, 0%, 0.1); 
+}
