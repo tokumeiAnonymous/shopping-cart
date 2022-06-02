@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.0374449f.css",
-    "main.js": "/shopping-cart/static/js/main.1964bb7a.js",
-    "static/media/Summer sale.png": "/shopping-cart/static/media/Summer sale.10540bb54d47ada07e22.png",
-    "static/media/Fashion sale.png": "/shopping-cart/static/media/Fashion sale.6b7d4a7a282902ef94cf.png",
-    "static/media/Voucher code.png": "/shopping-cart/static/media/Voucher code.84536fd928185b2034a8.png",
-    "static/media/Flash sale.png": "/shopping-cart/static/media/Flash sale.c5848bff255a2b8318e7.png",
-    "static/media/blank-profile.png": "/shopping-cart/static/media/blank-profile.2fda6558cd58b877e14f.png",
-    "static/media/Logo.svg": "/shopping-cart/static/media/Logo.392aca37c3271ec31176e5d4dd33fb57.svg",
-    "static/media/github-brands.svg": "/shopping-cart/static/media/github-brands.06d47d9d1b9a76428f8061d1a524bb3e.svg",
-    "static/media/house-solid.svg": "/shopping-cart/static/media/house-solid.b20d9cd0b92d9ac8326dced300c73b65.svg",
-    "static/media/cart-shopping-solid.svg": "/shopping-cart/static/media/cart-shopping-solid.68a706086e4a2c097c9f866f64c77d01.svg",
-    "index.html": "/shopping-cart/index.html",
-    "static/media/bag-shopping-solid.svg": "/shopping-cart/static/media/bag-shopping-solid.4cc57a765ee02118b9dc4e18b84dbd60.svg",
-    "static/media/linkedin-brands.svg": "/shopping-cart/static/media/linkedin-brands.410bb2dd7a3b5f037a0d94f3b9457548.svg",
-    "static/media/magnifying-glass-solid.svg": "/shopping-cart/static/media/magnifying-glass-solid.4f620570201374dc764e8b18c98512b3.svg",
-    "static/media/user-solid.svg": "/shopping-cart/static/media/user-solid.cb49371cf04e429e863b851749786131.svg",
-    "static/media/star.svg": "/shopping-cart/static/media/star.be5d7d6040102bf8454b602494f5d44d.svg",
-    "static/media/star-filled.svg": "/shopping-cart/static/media/star-filled.afeb763ceeb05ee1ffa985950bdb2820.svg",
-    "main.0374449f.css.map": "/shopping-cart/static/css/main.0374449f.css.map",
-    "main.1964bb7a.js.map": "/shopping-cart/static/js/main.1964bb7a.js.map"
+    "main.css": "/static/css/main.0374449f.css",
+    "main.js": "/static/js/main.f18bae68.js",
+    "static/media/Summer sale.png": "/static/media/Summer sale.10540bb54d47ada07e22.png",
+    "static/media/Fashion sale.png": "/static/media/Fashion sale.6b7d4a7a282902ef94cf.png",
+    "static/media/Voucher code.png": "/static/media/Voucher code.84536fd928185b2034a8.png",
+    "static/media/Flash sale.png": "/static/media/Flash sale.c5848bff255a2b8318e7.png",
+    "static/media/blank-profile.png": "/static/media/blank-profile.2fda6558cd58b877e14f.png",
+    "static/media/Logo.svg": "/static/media/Logo.392aca37c3271ec31176e5d4dd33fb57.svg",
+    "static/media/github-brands.svg": "/static/media/github-brands.06d47d9d1b9a76428f8061d1a524bb3e.svg",
+    "static/media/house-solid.svg": "/static/media/house-solid.b20d9cd0b92d9ac8326dced300c73b65.svg",
+    "static/media/cart-shopping-solid.svg": "/static/media/cart-shopping-solid.68a706086e4a2c097c9f866f64c77d01.svg",
+    "index.html": "/index.html",
+    "static/media/bag-shopping-solid.svg": "/static/media/bag-shopping-solid.4cc57a765ee02118b9dc4e18b84dbd60.svg",
+    "static/media/linkedin-brands.svg": "/static/media/linkedin-brands.410bb2dd7a3b5f037a0d94f3b9457548.svg",
+    "static/media/magnifying-glass-solid.svg": "/static/media/magnifying-glass-solid.4f620570201374dc764e8b18c98512b3.svg",
+    "static/media/user-solid.svg": "/static/media/user-solid.cb49371cf04e429e863b851749786131.svg",
+    "static/media/star.svg": "/static/media/star.be5d7d6040102bf8454b602494f5d44d.svg",
+    "static/media/star-filled.svg": "/static/media/star-filled.afeb763ceeb05ee1ffa985950bdb2820.svg",
+    "main.0374449f.css.map": "/static/css/main.0374449f.css.map",
+    "main.f18bae68.js.map": "/static/js/main.f18bae68.js.map"
   },
   "entrypoints": [
     "static/css/main.0374449f.css",
-    "static/js/main.1964bb7a.js"
+    "static/js/main.f18bae68.js"
   ]
 }
