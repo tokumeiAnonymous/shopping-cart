@@ -13,30 +13,30 @@ export default function Header({ cart }) {
         <div className="header--wrapper">
         <header className="header">
             {/* Routing for the links neglect warning for now*/}
-            <NavLink to="/" className="header--logo">
+            <NavLink to="/shopping-cart/" className="header--logo">
                 <img src={logoSrc} alt="Shopp-E logo"/>
                 <div className="header--title">SHOPP-E</div>
             </NavLink>
             <nav>
             <ul>
                 <li>
-                    <NavLink id="header--home" to="/">
+                    <NavLink id="header--home" to="/shopping-cart/">
                         <HomeIcon width="2rem" height="2rem"/>
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink id="header--shop" to="/shop">
+                    <NavLink id="header--shop" to="/shopping-cart/shop">
                         <ShopIcon width="2rem" height="2rem" />
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink id="header--cart" to="/cart">
+                    <NavLink id="header--cart" to="/shopping-cart/cart">
                     {count > 0 && <div className='cart--counter'>{count}</div>}
                         <CartIcon width="2rem" height="2rem" />
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink id="header--account" to="/account">
+                    <NavLink id="header--account" to="/shopping-cart/account">
                         <AccountIcon width="2rem" height="2rem" />
                     </NavLink>
                 </li>

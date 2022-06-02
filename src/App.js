@@ -59,17 +59,17 @@ function App() {
           <Header cart={cart}/>
           <Routes>
             <Route path='*' element={<Error404 />} />
-            <Route path='/' element={<HomePage />} />
-            <Route path='/shop' element={<Shop />} />
-            <Route path='/cart' 
+            <Route path='/shopping-cart/' element={<HomePage />} />
+            <Route path='/shopping-cart/shop' element={<Shop />} />
+            <Route path='/shopping-cart/cart' 
             element={<Cart cart={cart} 
             updateCart={updateCountFromCart}
             balance={balance}
             updateBalance={updateBalance}
             clearCart={clearCart}/>} />
-            <Route path='/account' 
+            <Route path='/shopping-cart/account' 
             element={<Account balance={balance}/>} />
-            <Route path='/shop/:id' element={<ProductFullView addTocart={addToCart}/>} />
+            <Route path='/shopping-cart/shop/:id' element={<ProductFullView addTocart={addToCart}/>} />
           </Routes>
           <Footer />
         </BrowserRouter>

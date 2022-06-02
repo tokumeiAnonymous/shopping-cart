@@ -6,7 +6,7 @@ export default function Product(props) {
     const {id, name, price, rating, imageSrc} = props.product;
     
     return (
-        <Link className='product' to={`/shop/${id}`}>
+        <Link className='product' to={`/shopping-cart/shop/${id}`}>
             <img src={imageSrc} alt={name} />
             <div className="name">{name}</div>
             <div className="price">$ {price}</div>

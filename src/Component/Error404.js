@@ -1,7 +1,9 @@
-import React from 'react'
+import errorSrc from '../Assets/Error404.png';
 
 export default function Error404() {
   return (
-    <main>Page not found!</main>
+    <main>
+      <img src={errorSrc} alt="Page not found!" />
+    </main>
   )
 }

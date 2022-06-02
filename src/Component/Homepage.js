@@ -9,7 +9,7 @@ export default function Homepage() {
         <main className='home'>
             <div className='home--first'>
                 <img id='home--fashion' src={fashionSale} alt=' Fashion Sale ' />
-                <NavLink to='/shop' className='home--shop--link'>
+                <NavLink to='/shopping-cart/shop' className='home--shop--link'>
                     Shop now!
                 </NavLink>
             </div>
