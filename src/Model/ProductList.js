@@ -23,7 +23,12 @@ const ProductList = [
         price: 50,
         rating: 4,
         seller: 'Seller',
-        comments: [],
+        comments: [
+            {
+                userName: 'ipsummerol',
+                comment: 'Lorem ipsum dolor sit amet'
+            }
+        ],
         imageSrc: '../ItemImages/AutumnTree.png'
     },
     {
@@ -32,7 +37,16 @@ const ProductList = [
         price: 1000,
         rating: -1,
         seller: 'Farmer',
-        comments: [],
+        comments: [
+            {
+                userName: 'ipsummerol',
+                comment: 'Lorem ipsum dolor sit amet'
+            },
+            {
+                userName: 'ddolorsit',
+                comment: 'Laboris nisi ut aliquip ex ea commodo consequat.'
+            }
+        ],
         imageSrc: 'https://via.placeholder.com/270'
     },
     {
@@ -41,7 +55,16 @@ const ProductList = [
         price: 300,
         rating: 4,
         seller: 'Chess master',
-        comments: [],
+        comments: [
+            {
+                userName: 'ipsummerol',
+                comment: 'Lorem ipsum dolor sit amet'
+            },
+            {
+                userName: 'ddolorsit',
+                comment: 'Laboris nisi ut aliquip ex ea commodo consequat.'
+            }
+        ],
         imageSrc: 'https://via.placeholder.com/270'
     },
     {
@@ -50,7 +73,16 @@ const ProductList = [
         price: 20,
         rating: 5,
         seller: 'Runner',
-        comments: [],
+        comments: [
+            {
+                userName: 'ipsummerol',
+                comment: 'Lorem ipsum dolor sit amet'
+            },
+            {
+                userName: 'ddolorsit',
+                comment: 'Laboris nisi ut aliquip ex ea commodo consequat.'
+            }
+        ],
         imageSrc: '../ItemImages/Hero.png'
     },
     {
@@ -59,7 +91,9 @@ const ProductList = [
         price: 20,
         rating: 4,
         seller: 'Farmer',
-        comments: [],
+        comments: [
+
+        ],
         imageSrc: '../ItemImages/SoilBlock.png'
     },
     {
@@ -68,7 +102,9 @@ const ProductList = [
         price: 20,
         rating: -1,
         seller: 'Farmer',
-        comments: [],
+        comments: [
+
+        ],
         imageSrc: '../ItemImages/RockBlock.png'
     },
     {
@@ -77,8 +113,57 @@ const ProductList = [
         price: 4,
         rating: 4,
         seller: 'Seaman',
-        comments: [],
+        comments: [
+            {
+                userName: 'ipsummerol',
+                comment: 'Lorem ipsum dolor sit amet'
+            },
+            {
+                userName: 'ddolorsit',
+                comment: 'Laboris nisi ut aliquip ex ea commodo consequat.'
+            },
+            {
+                userName: 'Commodol',
+                comment: 'Lorem ipsum dolor sit amet'
+            },
+            {
+                userName: 'adfd',
+                comment: 'Laboris nisi ut aliquip ex ea commodo consequat.'
+            }
+        ],
         imageSrc: '../ItemImages/CrateBlock.png'
+    },
+    {
+        id: 9,
+        name: '2D Platformer Spring Tree',
+        price: 4,
+        rating: 4,
+        seller: 'Platformer',
+        comments: [
+            {
+                userName: 'ipsummerol',
+                comment: 'Lorem ipsum dolor sit amet'
+            }
+        ],
+        imageSrc: '../ItemImages/Tree.png'
+    },
+    {
+        id: 9,
+        name: '2D Platformer Autumn Tree',
+        price: 3,
+        rating: 5,
+        seller: 'Platformer',
+        comments: [
+            {
+                userName: 'ipsummerol',
+                comment: 'Lorem ipsum dolor sit amet'
+            },
+            {
+                userName: 'ddolorsit',
+                comment: 'Laboris nisi ut aliquip ex ea commodo consequat.'
+            }
+        ],
+        imageSrc: '../ItemImages/TreeAutumn.png'
     }
 ]
 

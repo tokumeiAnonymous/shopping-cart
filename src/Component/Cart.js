@@ -36,10 +36,12 @@ export default function Cart({ cart, updateCart, balance, updateBalance, clearCa
 
     return (
         <main className='cart'>
+            <div className='cart-balance'>
+                <div> Total: $ {totalAmount}</div>
+                <div>Current Balance: $ {balance}</div>
+                <button onClick={() => checkout(totalAmount)}>Check out</button>
+            </div>
             {cartList}
-            <div> Total: $ {totalAmount}</div>
-            <div>Current Balance: $ {balance}</div>
-            <button onClick={() => checkout(totalAmount)}>Check out</button>
             <dialog className='warning-balance'>
                 <div className="message">Not enough balance!</div>
                 <button onClick={closeModal}>Close</button>
