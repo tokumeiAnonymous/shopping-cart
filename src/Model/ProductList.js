@@ -15,7 +15,7 @@ const ProductList = [
                 comment: 'The best product in town!'
             }
         ],
-        imageSrc: '../ItemImages/SpringTree.png'
+        imageSrc: '/shopping-cart/ItemImages/SpringTree.png'
     },
     {
         id: 2,
@@ -29,7 +29,7 @@ const ProductList = [
                 comment: 'Lorem ipsum dolor sit amet'
             }
         ],
-        imageSrc: '../ItemImages/AutumnTree.png'
+        imageSrc: '/shopping-cart/ItemImages/AutumnTree.png'
     },
     {
         id: 3,
@@ -83,7 +83,7 @@ const ProductList = [
                 comment: 'Laboris nisi ut aliquip ex ea commodo consequat.'
             }
         ],
-        imageSrc: '../ItemImages/Hero.png'
+        imageSrc: '/shopping-cart/ItemImages/Hero.png'
     },
     {
         id: 6,
@@ -94,7 +94,7 @@ const ProductList = [
         comments: [
 
         ],
-        imageSrc: '../ItemImages/SoilBlock.png'
+        imageSrc: '/shopping-cart/ItemImages/SoilBlock.png'
     },
     {
         id: 7,
@@ -105,7 +105,7 @@ const ProductList = [
         comments: [
 
         ],
-        imageSrc: '../ItemImages/RockBlock.png'
+        imageSrc: '/shopping-cart/ItemImages/RockBlock.png'
     },
     {
         id: 8,
@@ -131,7 +131,7 @@ const ProductList = [
                 comment: 'Laboris nisi ut aliquip ex ea commodo consequat.'
             }
         ],
-        imageSrc: '../ItemImages/CrateBlock.png'
+        imageSrc: '/shopping-cart/ItemImages/CrateBlock.png'
     },
     {
         id: 9,
@@ -145,7 +145,7 @@ const ProductList = [
                 comment: 'Lorem ipsum dolor sit amet'
             }
         ],
-        imageSrc: '../ItemImages/Tree.png'
+        imageSrc: '/shopping-cart/ItemImages/Tree.png'
     },
     {
         id: 9,
@@ -163,7 +163,7 @@ const ProductList = [
                 comment: 'Laboris nisi ut aliquip ex ea commodo consequat.'
             }
         ],
-        imageSrc: '../ItemImages/TreeAutumn.png'
+        imageSrc: '/shopping-cart/ItemImages/TreeAutumn.png'
     }
 ]
 
