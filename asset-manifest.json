@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.0374449f.css",
-    "main.js": "/shopping-cart/static/js/main.689bd200.js",
+    "main.js": "/shopping-cart/static/js/main.d6b92b02.js",
     "static/media/Summer sale.png": "/shopping-cart/static/media/Summer sale.10540bb54d47ada07e22.png",
     "static/media/Fashion sale.png": "/shopping-cart/static/media/Fashion sale.6b7d4a7a282902ef94cf.png",
     "static/media/Voucher code.png": "/shopping-cart/static/media/Voucher code.84536fd928185b2034a8.png",
     "static/media/Flash sale.png": "/shopping-cart/static/media/Flash sale.c5848bff255a2b8318e7.png",
+    "static/media/Error404.png": "/shopping-cart/static/media/Error404.2dabd4aa08359c90d60b.png",
     "static/media/blank-profile.png": "/shopping-cart/static/media/blank-profile.2fda6558cd58b877e14f.png",
     "static/media/Logo.svg": "/shopping-cart/static/media/Logo.392aca37c3271ec31176e5d4dd33fb57.svg",
     "static/media/github-brands.svg": "/shopping-cart/static/media/github-brands.06d47d9d1b9a76428f8061d1a524bb3e.svg",
@@ -19,10 +20,10 @@
     "static/media/star.svg": "/shopping-cart/static/media/star.be5d7d6040102bf8454b602494f5d44d.svg",
     "static/media/star-filled.svg": "/shopping-cart/static/media/star-filled.afeb763ceeb05ee1ffa985950bdb2820.svg",
     "main.0374449f.css.map": "/shopping-cart/static/css/main.0374449f.css.map",
-    "main.689bd200.js.map": "/shopping-cart/static/js/main.689bd200.js.map"
+    "main.d6b92b02.js.map": "/shopping-cart/static/js/main.d6b92b02.js.map"
   },
   "entrypoints": [
     "static/css/main.0374449f.css",
-    "static/js/main.689bd200.js"
+    "static/js/main.d6b92b02.js"
   ]
 }
