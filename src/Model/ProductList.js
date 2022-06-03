@@ -47,7 +47,7 @@ const ProductList = [
                 comment: 'Laboris nisi ut aliquip ex ea commodo consequat.'
             }
         ],
-        imageSrc: 'https://via.placeholder.com/270'
+        imageSrc: '/shopping-cart/ItemImages/WindMill.png'
     },
     {
         id: 4,
@@ -65,7 +65,7 @@ const ProductList = [
                 comment: 'Laboris nisi ut aliquip ex ea commodo consequat.'
             }
         ],
-        imageSrc: 'https://via.placeholder.com/270'
+        imageSrc: '/shopping-cart/ItemImages/Chess.png'
     },
     {
         id: 5,
